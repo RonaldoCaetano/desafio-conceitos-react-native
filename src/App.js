@@ -25,8 +25,6 @@ export default function App() {
     setRepositories(updateRepo);
   }
 
-  console.log({ repositories });
-
   useEffect(() => {
     api.get("/repositories").then((response) => {
       setRepositories(response.data);
